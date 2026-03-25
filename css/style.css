@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:  border-box;
+  font-family: 'Inter', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+:root{
+    --main-color: #ff9f0d;
+    --text-color: #fff;
+    --other-color: #000;
+    --second-color: #9e9e9e;
+    --bg-color: #111;
+
+    --bif-font: 4.5rem;
+    --h2-font: 2.5rem;
+    --p-font: 1rem;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 14%;
+    transition: all 0.5s ease;
+}
+
+.Logo{
+    display: flex ;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.Logo i{
+    color: var(--main-color);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list a{
+   color: var(--text-color);
+   font-size: var(--p-font);
+   font-weight: 600;
+   margin: 0 30px;
+   transition: all 0.5s ease;
+}
+
+.nav-list a:hover{
+    color: var(--main-color);
+}
+
+.nav-list a.active{
+    color: var(--main-color);
+}
+
+.nav-icons{ 
+    display: flex; 
+    align-items: center;
+    padding: 8 px 15px;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow: #ff9f0d 0px 1px 25px;
+}
+
+.nav-icons i{
+    vertical-align: middle;
+    color: var(--bg-color);
+    font-size: 25px;
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+#menu-icon{
+    display: none;
+    font-size: 32px;
+    color: var(--bg-color);
+    cursor: pointer;
+    z-index: 100001;
+    display:none;
+}
+
+.nav-icons i:hover{
+    color: var(--text-color);
+    transform: scale(1.1);
+}
