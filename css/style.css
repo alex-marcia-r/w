@@ -13,10 +13,11 @@
 
 :root{
     --main-color: #ff9f0d;
-    --text-color: #fff;
+    --Main-text-color: #542B12;
+    --other-text-color: #0B3954;
     --other-color: #000;
     --second-color: #9e9e9e;
-    --bg-color: #111;
+    --bg-color: #FFFFFF;
 
     --bif-font: 4.5rem;
     --h2-font: 2.5rem;
@@ -45,7 +46,7 @@ header{
 .Logo{
     display: flex ;
     align-items: center;
-    color: var(--text-color);
+    color: var(--Main-text-color);
     font-size: 33px;
     font-weight: 700;
 }
