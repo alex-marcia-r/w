@@ -149,7 +149,7 @@ span{
     font-weight: 500;
     letter-spacing: 1px;
     border-radius:2rem;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
 .btn i{
@@ -169,6 +169,41 @@ header.sticky {
     padding: 12px 14%;
     background: var(--second-color);
 }
+
+   /* <!-- Conteiner --> */
+.container {
+    padding: 25px 14% 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+    gap:3rem;
+    text-align: center;
+}
+
+.container-box{
+    padding: 14px 12% 15px;
+    color:var(--Main-text-color);
+    border-radius: 3rem;
+}
+
+.container-box img{
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+}
+
+
+.container-box h3{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 16px o;
+}
+
+
+.container-box h3:hover{
+    color:rgb(48, 28, 162);
+    transition: all 0.7s ease;
+}
+
 
 /*Footer 
 .NombreEmpresa{
