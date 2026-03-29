@@ -16,10 +16,10 @@
     --Main-text-color: #542B12;
     --other-text-color: #0B3954;
     --other-color: #000;
-    --second-color: #9e9e9e;
+    --second-color: #f6f6f6;
     --bg-color: #FFFFFF;
 
-    --bif-font: 4.5rem;
+    --bif-font: 2.1rem;
     --h2-font: 2.5rem;
     --p-font: 1rem;
 }
@@ -108,3 +108,88 @@ header{
     color: var(--text-color);
     transform: scale(1.1);
 }
+
+/* Home */
+
+section{
+    padding: 190px 24% 10px; 
+}
+
+.home{
+    position:relative;
+    height: 100vh;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:2rem;
+}
+
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+
+.home-text h1{
+    font-size: var(--bif-font);
+    font-weight: 5000;
+    line-height: 0.92;
+    margin-bottom: 4rem;
+}
+span{
+    color:var(--main-color)
+}
+
+.btn{
+    display:inline-block;
+    padding: 5px 15px; 
+    background-color: var(--main-color);
+    color:var(--bg-color);
+    font-size:var(--p-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius:2rem;
+    transition: all 0.5 ease;
+}
+
+.btn i{
+    vertical-align: middle;
+    margin-left: 9px;
+    font-size: 22px;
+}
+
+.btn:hover{
+    background:rgb(48, 28, 162);
+    color:var(--other-color);
+    box-shadow: #ff9f0d;
+    transform: translate(3px);
+}
+
+header.sticky {
+    padding: 12px 14%;
+    background: var(--second-color);
+}
+
+/*Footer 
+.NombreEmpresa{
+    top:100;
+    padding: 12px 14px;
+    align-items:end;
+    display: flex;
+}   
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 14%;
+    transition: all 0.5s ease;
+}
+
+*/
