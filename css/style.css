@@ -162,7 +162,7 @@ span{
     background:rgb(48, 28, 162);
     color:var(--other-color);
     box-shadow: #ff9f0d;
-    transform: translate(3px);
+    transform: translateY(-4px);
 }
 
 header.sticky {
@@ -180,11 +180,16 @@ header.sticky {
 }
 
 .container-box{
-    padding: 14px 12% 15px;
+    padding: 30px 12% 35px;
     color:var(--Main-text-color);
-    border-radius: 3rem;
+    border-radius: 2rem;
+    background-color: var(--other-color);
 }
 
+.container-box:hover{
+    background-color: var(--other-text-color);
+    color: var(--other-color);
+}
 .container-box img{
     width: 100%;
     height: auto;
@@ -193,7 +198,7 @@ header.sticky {
 
 
 .container-box h3{
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
     margin: 16px o;
 }
@@ -204,7 +209,43 @@ header.sticky {
     transition: all 0.7s ease;
 }
 
+.imgreales{
+    padding: 40px 10% 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    gap: 4rem;
+    text-align: center;
+}
 
+.cir{
+    padding: 110px 20% 110px;
+    border-radius:3rem;
+    color: var(--Main-text-color);
+    background-color:var(--other-color);
+}
+.cir:hover{
+    color:var(--other-color);
+    background-color: var(--other-text-color);
+    
+}
+
+/*footer*/
+
+
+.footer {
+    padding:1px 6% 8px;
+    color:var(--Main-text-color);
+}
+
+.ShortDescrition{
+    color:var(--other-text-color);
+}
+
+.ap-final{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(3px,auto));
+    text-align: center;
+}
 /*Footer 
 .NombreEmpresa{
     top:100;
