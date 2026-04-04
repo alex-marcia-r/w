@@ -230,22 +230,22 @@ header.sticky {
 }
 
 /*footer*/
-
-
-.footer {
-    padding:1px 6% 8px;
-    color:var(--Main-text-color);
+.footer{
+    padding: 60px 3% 60px; 
+    align-items: center;
 }
 
-.ShortDescrition{
-    color:var(--other-text-color);
-}
-
-.ap-final{
+.listafinal{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(3px,auto));
-    text-align: center;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 0.9rem;
+    color: var(--other-text-color);
 }
+
+.Fn{
+    color: var(--other-color);
+}
+
 /*Footer 
 .NombreEmpresa{
     top:100;
