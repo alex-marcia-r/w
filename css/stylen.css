@@ -112,6 +112,7 @@ header{
 
 /* home */
 .homeNosotros{
+    padding: 25px 14% 60px;
     position:relative;
     height: 100vh;
     width:100%;
@@ -120,8 +121,26 @@ header{
     align-items: center;
     gap:2rem;
 }
+/*conteiner*/
 
-
+.Historia{
+    padding: 60px 3% 60px;
+    align-items: right;
+    color:var(--other-text-color);
+}
 span{
     color:var(--main-color)
+}
+
+.info{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,5fr);
+    font-size: 1rem;
+    color: #5C676D;
+}
+
+#EleF{
+    color: #5C676D; 
+    text-align: center;
 }
