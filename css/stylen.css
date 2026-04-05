@@ -121,6 +121,14 @@ header{
     align-items: center;
     gap:2rem;
 }
+
+.Historia-head{
+    padding: 50px 8% 2px;
+}
+
+.uno{
+    padding: 50px 8% 2px;
+}
 /*conteiner*/
 
 .Historia{
@@ -133,11 +141,12 @@ span{
 }
 
 .info{
-    text-align: center;
+    padding: 10px 3% 60px;
     display: grid;
     grid-template-columns: repeat(2,5fr);
     font-size: 1rem;
     color: #5C676D;
+    text-align: center;
 }
 
 #EleF{
