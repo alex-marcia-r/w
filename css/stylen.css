@@ -129,6 +129,12 @@ header{
 .uno{
     padding: 50px 8% 2px;
 }
+
+header.sticky {
+    padding: 12px 14%;
+    background: var(--second-color);
+}
+
 /*conteiner*/
 
 .Historia{
