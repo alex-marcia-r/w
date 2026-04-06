@@ -159,3 +159,31 @@ span{
     color: #5C676D; 
     text-align: center;
 }
+
+
+
+/*footer*/
+.footer{
+    padding: 60px 3% 60px; 
+    align-items: center;
+}
+
+
+
+.listafinal{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 0.9rem;
+    color: var(--other-text-color);
+}
+
+.Fn{
+    color: var(--other-color);
+    font-weight: 700;
+}
+
+.MainName{
+    text-decoration:underline;
+    color:var(--Main-text-color);
+    font-size: 2rem;
+}
