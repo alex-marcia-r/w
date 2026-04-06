@@ -159,10 +159,9 @@ span{
 }
 
 .btn:hover{
-    background:rgb(48, 28, 162);
-    color:var(--other-color);
-    box-shadow: #ff9f0d;
-    transform: translateY(-4px);
+    background: var(--other-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
 }
 
 header.sticky {

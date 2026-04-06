@@ -16,7 +16,7 @@
     --Main-text-color: #542B12;
     --other-text-color: #0B3954;
     --other-color: #000;
-    --second-color: #f6f6f6;
+    --second-color: #f1f1f1e9;
     --bg-color: #FFFFFF;
 
     --bif-font: 2.1rem;
@@ -25,7 +25,7 @@
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: var(--second-color);
     color: var(--text-color);
 }
 
@@ -135,6 +135,22 @@ header.sticky {
     background: var(--second-color);
 }
 
+.btn-n{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 3rem;
+    font-size: var(--p-font);
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.btn-n:hover{
+    background: var(--other-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
 /*conteiner*/
 
 .Historia{
@@ -160,6 +176,39 @@ span{
     text-align: center;
 }
 
+/*<!-- V y M -->*/
+
+.mvv{
+    padding: 60px 3% 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr); 
+}
+
+
+.mv{
+    border-radius: 6px;
+    border-style:hidden;
+    background: var(--bg-color);
+    color: #5C676D;
+    padding:60px; 
+    text-align:justify;
+    font-size: 0.7rem;
+}
+
+.dos{
+    color:var(--other-text-color);
+    padding:17px;
+}
+
+.v{
+    border-radius: 6px; 
+    background: var(--other-text-color);
+    color:var(--bg-color);
+    text-align: center; 
+    padding: 80px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 
 
 /*footer*/
