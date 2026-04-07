@@ -183,13 +183,7 @@ span{
     margin-right: 30px;
     display: grid;
     grid-template-columns: repeat(2, 4fr); 
-}
-
-.mv{
-   width:170%; 
-}
-
-
+}  
 .mv{
     border-radius: 6px;
     border-style:hidden;
