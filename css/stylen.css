@@ -180,8 +180,13 @@ span{
 
 .mvv{
     padding: 60px 3% 60px;
+    margin-right: 30px;
     display: grid;
     grid-template-columns: repeat(2, 4fr); 
+}
+
+.v{
+   width:35%; 
 }
 
 
