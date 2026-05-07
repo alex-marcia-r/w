@@ -111,8 +111,8 @@ header{
 section{
     padding: 190px 24% 10px; 
 }
-
-.home{
+.Home{
+    padding: 25px 14% 60px;
     position:relative;
     height: 100vh;
     width:100%;
@@ -129,30 +129,23 @@ section{
 
 .home-text h1{
     font-size: var(--bif-font);
-    font-weight: 5000;
+    font-weight: 700;
     line-height: 0.92;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 span{
     color:var(--main-color)
 }
 
 .btn{
-    display:inline-block;
-    padding: 5px 15px; 
-    background-color: var(--main-color);
-    color:var(--bg-color);
-    font-size:var(--p-font);
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius:2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 3rem;
+    font-size: var(--p-font);
+    font-weight: 600;
     transition: all 0.5s ease;
-}
-
-.btn i{
-    vertical-align: middle;
-    margin-left: 9px;
-    font-size: 22px;
 }
 
 .btn:hover{
@@ -163,7 +156,7 @@ span{
 
 header.sticky {
     padding: 12px 14%;
-    background: var(--second-color);
+    background: var(--bg-color);
 }
 
    /* <!-- Conteiner --> */
