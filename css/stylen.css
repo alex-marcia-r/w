@@ -220,6 +220,7 @@ span{
 .footer{
     padding: 60px 3% 60px; 
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 .listafinal{

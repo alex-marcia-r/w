@@ -1,59 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Productos - Rosquilla Reyes</title>
     <link rel="stylesheet" href="css/stylep.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <!-- Header -->
-
     <header>
-        <a href="#" class="Logo"> <i class=""></i> Rosquilla Reyes</a>
-        <ul class="nav-list"> 
+        <a href="index.html" class="Logo">Rosquilla Reyes</a>
+        <ul class="nav-list">
             <li> <a href="index.html">Inicio</a></li>
             <li> <a href="nosotros.html">Nosotros</a></li>
             <li> <a href="#" class="active">Productos</a></li>
             <li> <a href="noticias.html">Noticias</a></li>
-            <li> <a href="contacto.html">Contacto </a></li>
+            <li> <a href="contacto.html">Contacto</a></li>
         </ul>
-
-        <div class = "nav-icons">
+        <div class="nav-icons">
             <a href="#"><i class="bx bx-search"></i></a>
             <a href="#"><i class="bx bx-cart"></i></a>
-            <div class = "bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
-    
 
-    <!-- Footer  -->
+    <!-- Hero productos -->
+    <section class="page-hero">
+        <div class="page-hero-card">
+            <h1>EXPLORA NUESTRO CATÁLOGO</h1>
+        </div>
+        <p class="hero-sub">Si desea de nuestros productos para eventos, no dude en llamarnos,
+            para más información en <a href="contacto.html" class="link-contacto">Contacto</a></p>
+    </section>
 
+    <!-- Productos principales -->
+    <section class="productos-grid">
+        <div class="producto-card">
+            <div class="producto-img-wrap">
+                <img src="img/rosquillas.jpg" alt="Rosquillas">
+            </div>
+            <p>Rosquillas</p>
+        </div>
+
+        <div class="producto-card">
+            <div class="producto-img-wrap">
+                <img src="img/hojaldras.jpg" alt="Hojaldras">
+            </div>
+            <p>Hojaldras</p>
+        </div>
+
+        <div class="producto-card">
+            <div class="producto-img-wrap">
+                <img src="img/rosquetes.jpg" alt="Rosquetes">
+            </div>
+            <p>Rosquetes</p>
+        </div>
+
+        <div class="producto-card">
+            <div class="producto-img-wrap">
+                <img src="img/cosadehorno.jpg" alt="Cosas de horno">
+            </div>
+            <p>Cosas de horno</p>
+        </div>
+    </section>
+
+    <!-- Exclusiva para eventos -->
+    <section class="eventos-section">
+        <h2 class="eventos-title"><span>Exclusiva</span> para eventos</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <div class="producto-img-wrap">
+                    <img src="img/pupusas.jpg" alt="Pupusas Tostadas">
+                </div>
+                <p>Pupusas Tostadas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <section class="footer">
         <div class="footer-box">
             <div class="ap-final">
+                <h2 class="MainName">Rosquillas Reyes</h2>
+                <ul class="listafinal">
+                    <li>
+                        <p><br>Somos una empresa panificadora <br>
+                            comprometida con ofrecer productos <br> de la más alta calidad, liderando<br>siempre las
+                            mejores tendencias del <br> momento.</p><br><br>
+                    </li>
+                    <li>
+                        <p><span class="Fn">Productos destacados</span></p>
+                        <a class="MainProducts"><br> Rosquillas <br><br>Hojaldras <br><br>Cosas de horno <br><br> Rosquetes</a>
+                    </li>
+                    <li>
+                        <a><span class="Fn">HORARIOS</span> <br><br>LUNES A VIERNES <br> 6:00 A.M. - 9:00 P.M.
+                            <br>DOMINGO Y SABADOS<br>7:00 A.M. - 9:00 P.M.</a>
+                    </li>
+                    <li>
+                        <p><span class="Fn">CONTACTENOS</span> <br> <span><br>+505 8250 1265 <br>+505 2344 0258
+                            </span><br><br> De la estación de policía 2 <br>cuadras al Sur, El Viejo, <br>Nicaragua</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-       <h2 class="MainName">Rosquillas Reyes </h2>
-       <ul class="listafinal"> 
-        <li>  
-           <p><br>Somos una empresa panificadora <br>
-           comprometida con ofrecer productos <br> de la más alta calidad, liderando<br>siempre las mejores tendencias del    <br> momento. </p> <br><br>
-        </li>
-        <li>
-            <p> <span class="Fn">Productos destacados</span></p>
-            <a class="MainProducts"><br> Rosquillas <br><br>Hojaldras <br><br>Cosas de horno <br><br> Rosquetes</a>
-        </li>
-        <li> 
-            <a><span class="Fn">HORARIOS</span> <br><br>LUNES A VIERNES <br> 6:00 A.M. - 9:00 P.M. <br>DOMINGO Y SABADOS<br>7:00 A.M. - 9:00 P.M.</a> 
-        </li>
-        <li> 
-           <p> <span class="Fn">CONTACTENOS</span> <br> <span><br>+505 8250 1265 <br>+505 2344 0258 </span><br><br> De la estación de policía 2 <br>cuadras al Sur, El Viejo, <br>Nicaragua</p> 
-        </li>
-       </ul>
-
-    </section>  
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
+
 </html>

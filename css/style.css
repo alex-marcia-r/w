@@ -248,6 +248,8 @@ header.sticky {
 .footer {
     padding: 60px 3% 60px;
     align-items: center;
+    background-color: var(--bg-color);
+    margin-top: 20px;
 }
 
 

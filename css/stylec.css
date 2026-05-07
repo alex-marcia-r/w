@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing:  border-box;
-  font-family: 'Inter', sans-serif;
-  list-style: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 
-:root{
+:root {
     --main-color: #ff9f0d;
     --Main-text-color: #542B12;
     --other-text-color: #0B3954;
@@ -24,66 +24,63 @@
     --p-font: 1rem;
 }
 
-body{
+body {
     background-color: var(--second-color);
-    color: var(--other-text-color);
+    color: var(--Main-text-color);
 }
 
-header{
+/* ── Header ── */
+header {
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     right: 0;
-    z-index:100;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background-color: var(--bg-color);
     padding: 30px 14%;
     transition: all 0.5s ease;
-    background-color:var(--bg-color);
     color: var(--other-color);
 }
 
-.Logo{
-    display: flex ;
+.Logo {
+    display: flex;
     align-items: center;
     color: var(--Main-text-color);
     font-size: 33px;
-    font-weight: 700; 
+    font-weight: 700;
     text-decoration: underline;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
 }
 
-.nav-list a{
-   color: var(--text-color);
-   font-size: var(--p-font);
-   font-weight: 600;
-   margin: 0 30px;
-   transition: all 0.5s ease;
+.nav-list a {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 30px;
+    transition: all 0.5s ease;
 }
 
-.nav-list a:hover{
+.nav-list a:hover,
+.nav-list a.active {
     color: var(--main-color);
 }
 
-.nav-list a.active{
-    color: var(--main-color);
-}
-
-.nav-icons{ 
-    display: flex; 
+.nav-icons {
+    display: flex;
     align-items: center;
-    padding: 8 px 15px;
+    padding: 8px 15px;
     background: var(--main-color);
     border-radius: 3rem;
     box-shadow: #ff9f0d 0px 1px 25px;
 }
 
-.nav-icons i{
+.nav-icons i {
     vertical-align: middle;
     color: var(--bg-color);
     font-size: 25px;
@@ -92,44 +89,196 @@ header{
     transition: all 0.5s ease;
 }
 
-#menu-icon{
+#menu-icon {
     display: none;
     font-size: 32px;
     color: var(--bg-color);
     cursor: pointer;
     z-index: 100001;
-    display:none;
 }
 
-.nav-icons i:hover{
-    color: var(--text-color);
+.nav-icons i:hover {
     transform: scale(1.1);
 }
 
 header.sticky {
     padding: 12px 14%;
-    background: var(--second-color);
-}
-/*footer*/
-.footer{
-    padding: 60px 3% 60px; 
-    align-items: center;
+    background: var(--bg-color);
 }
 
-.listafinal{
+/* ── Sección base ── */
+section {
+    padding: 110px 8% 30px;
+}
+
+/* ── Hero de página (fondo gris normal) ── */
+.page-hero {
+    padding: 120px 8% 16px;
+    background-color: var(--second-color);
+}
+
+.form-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--other-text-color);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: var(--bif-font);
+    font-weight: 700;
+    color: var(--other-text-color);
+    margin-bottom: 0.4rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+/* ── Sección contacto (grid 2 col) ── */
+.contacto-section {
+    padding: 20px 8% 40px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ── Formulario ── */
+.contacto-form-wrap {
+    background-color: #1b2f40;
+    border-radius: 1rem;
+    padding: 36px 32px;
+    color: #fff;
+}
+
+.form-titulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.4rem;
+    line-height: 1.3;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    border-color: var(--main-color);
+}
+
+.contacto-form textarea {
+    resize: none;
+}
+
+/* ── Info panel ── */
+.contacto-info {
+    padding: 8px 0;
+}
+
+.contacto-info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--other-text-color);
+    margin-bottom: 1.2rem;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    padding: 16px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-card i {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    flex-shrink: 0;
+}
+
+.info-card strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--other-text-color);
+    margin-bottom: 4px;
+}
+
+.info-card p {
+    font-size: 0.85rem;
+    color: var(--other-text-color);
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 3rem;
+    font-size: var(--p-font);
+    font-weight: 600;
+    transition: all 0.4s ease;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.btn:hover {
+    background: #e08800;
+    transform: scale(1.05);
+}
+
+/* ── Footer blanco ── */
+.footer {
+    padding: 60px 5% 40px;
+    background-color: var(--bg-color);
+    margin-top: 20px;
+}
+
+.listafinal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     font-size: 0.9rem;
     color: var(--other-text-color);
+    gap: 1.5rem;
 }
 
-.Fn{
+.Fn {
     color: var(--other-color);
     font-weight: 700;
 }
 
-.MainName{
-    text-decoration:underline;
-    color:var(--Main-text-color);
+.MainName {
+    text-decoration: underline;
+    color: var(--Main-text-color);
     font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
 }

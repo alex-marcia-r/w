@@ -1,59 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - Rosquilla Reyes</title>
     <link rel="stylesheet" href="css/stylec.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <!-- Header -->
-
     <header>
-        <a href="#" class="Logo"> <i class=""></i> Rosquilla Reyes</a>
-        <ul class="nav-list"> 
+        <a href="index.html" class="Logo">Rosquilla Reyes</a>
+        <ul class="nav-list">
             <li> <a href="index.html">Inicio</a></li>
             <li> <a href="nosotros.html">Nosotros</a></li>
             <li> <a href="productos.html">Productos</a></li>
             <li> <a href="noticias.html">Noticias</a></li>
-            <li> <a href="#" class="active">Contacto </a></li>
+            <li> <a href="#" class="active">Contacto</a></li>
         </ul>
-
-        <div class = "nav-icons">
+        <div class="nav-icons">
             <a href="#"><i class="bx bx-search"></i></a>
             <a href="#"><i class="bx bx-cart"></i></a>
-            <div class = "bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
 
-    
-    <!-- Footer  -->
+    <!-- Hero Contacto -->
+    <section class="page-hero">
+        <p class="form-tag">CONTÁCTENOS</p>
+        <h1 class="page-title">Envíenos sus consultas<span>!</span></h1>
+    </section>
 
+    <!-- Contenido contacto -->
+    <section class="contacto-section">
+        <!-- Formulario (izquierda) -->
+        <div class="contacto-form-wrap">
+            <form class="contacto-form">
+                <h5>Formulario de contacto</h3> <br>
+                    <h2>ENVIENOS SUS CONSULTAS</h2> <br><br>
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="tel" placeholder="Tu número">
+                    <input type="text" placeholder="Asunto">
+                    <textarea placeholder="Mensaje" rows="4" required></textarea>
+                    <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <!-- Info (derecha) -->
+        <div class="contacto-info">
+            <h3>Visítenos</h3>
+            <div class="info-card">
+                <i class="bx bx-map"></i>
+                <div>
+                    <strong>Dirección</strong>
+                    <p>De la estación de policía 2 cuadras al Sur, El Viejo, Nicaragua</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="bx bx-phone"></i>
+                <div>
+                    <strong>Contacto</strong>
+                    <p>+505 8250 1265<br>+505 2344 0258</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <section class="footer">
         <div class="footer-box">
             <div class="ap-final">
+                <h2 class="MainName">Rosquillas Reyes</h2>
+                <ul class="listafinal">
+                    <li>
+                        <p><br>Somos una empresa panificadora <br>
+                            comprometida con ofrecer productos <br> de la más alta calidad, liderando<br>siempre las
+                            mejores tendencias del <br> momento.</p><br><br>
+                    </li>
+                    <li>
+                        <p><span class="Fn">Productos destacados</span></p>
+                        <a class="MainProducts"><br> Rosquillas <br><br>Hojaldras <br><br>Cosas de horno <br><br>
+                            Rosquetes</a>
+                    </li>
+                    <li>
+                        <a><span class="Fn">HORARIOS</span> <br><br>LUNES A VIERNES <br> 6:00 A.M. - 9:00 P.M.
+                            <br>DOMINGO Y SABADOS<br>7:00 A.M. - 9:00 P.M.</a>
+                    </li>
+                    <li>
+                        <p><span class="Fn">CONTACTENOS</span> <br> <span><br>+505 8250 1265 <br>+505 2344 0258
+                            </span><br><br> De la estación de policía 2 <br>cuadras al Sur, El Viejo, <br>Nicaragua</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-       <h2 class="MainName">Rosquillas Reyes </h2>
-       <ul class="listafinal"> 
-        <li>  
-           <p><br>Somos una empresa panificadora <br>
-           comprometida con ofrecer productos <br> de la más alta calidad, liderando<br>siempre las mejores tendencias del    <br> momento. </p> <br><br>
-        </li>
-        <li>
-            <p> <span class="Fn">Productos destacados</span></p>
-            <a class="MainProducts"><br> Rosquillas <br><br>Hojaldras <br><br>Cosas de horno <br><br> Rosquetes</a>
-        </li>
-        <li> 
-            <a><span class="Fn">HORARIOS</span> <br><br>LUNES A VIERNES <br> 6:00 A.M. - 9:00 P.M. <br>DOMINGO Y SABADOS<br>7:00 A.M. - 9:00 P.M.</a> 
-        </li>
-        <li> 
-           <p> <span class="Fn">CONTACTENOS</span> <br> <span><br>+505 8250 1265 <br>+505 2344 0258 </span><br><br> De la estación de policía 2 <br>cuadras al Sur, El Viejo, <br>Nicaragua</p> 
-        </li>
-       </ul>
-
-    </section>  
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
+
 </html>
