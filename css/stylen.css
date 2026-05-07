@@ -177,46 +177,53 @@ span{
 }
 
 /*<!-- V y M -->*/
-
 .mvv{
-    padding: 60px 3% 60px;
-    margin-right: 30px;
+    padding: 80px;
     display: grid;
-    grid-template-columns: repeat(2, 4fr); 
-}  
+    grid-template-columns: repeat(2, 1fr); 
+    width: 95%;
+} 
+
 .mv{
     border-radius: 6px;
-    border-style:hidden;
     background: var(--bg-color);
     color: #5C676D;
     padding:60px; 
     text-align:justify;
-    font-size: 0.7rem;
+    font-size: 0.72rem;
+    border-radius: 30px;
 }
 
 .dos{
     color:var(--other-text-color);
-    padding:17px;
 }
 
 .v{
-    border-radius: 6px; 
+    background: var(--other-text-color);
+    color:var(--bg-color);
+    text-align:center;
+    height: 100%;
+    font-size: 1.1rem;
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: 30%;
+    border-radius: 30px;
+}
+/*
+.v{
     background: var(--other-text-color);
     color:var(--bg-color);
     text-align: center; 
-    padding: 80px;
     font-size: 1.2rem;
     font-weight: 400;
-}
-
+    box-sizing: border-box;
+} */
 
 /*footer*/
 .footer{
     padding: 60px 3% 60px; 
     align-items: center;
 }
-
-
 
 .listafinal{
     display: grid;
