@@ -129,7 +129,7 @@ header{
 
 header.sticky {
     padding: 12px 14%;
-    background: var(--second-color);
+    background: var(--bg-color);
 }
 
 .btn-n{
@@ -187,7 +187,7 @@ span{
     color: #5C676D;
     padding:60px; 
     text-align:justify;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     border-radius: 30px;
 }
 

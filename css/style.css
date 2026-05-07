@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing:  border-box;
-  font-family: 'Inter', sans-serif;
-  list-style: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 
-:root{
+:root {
     --main-color: #ff9f0d;
     --Main-text-color: #542B12;
     --other-text-color: #0B3954;
@@ -24,58 +24,58 @@
     --p-font: 1rem;
 }
 
-body{
+body {
     background-color: var(--second-color);
     color: var(--Main-text-color);
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     right: 0;
-    z-index:100;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: transparent;
     padding: 30px 14%;
     transition: all 0.5s ease;
-    background-color:var(--bg-color);
+    background-color: var(--bg-color);
     color: var(--other-color);
 }
 
-.Logo{
-    display: flex ;
+.Logo {
+    display: flex;
     align-items: center;
     color: var(--Main-text-color);
     font-size: 33px;
-    font-weight: 700; 
+    font-weight: 700;
     text-decoration: underline;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
 }
 
-.nav-list a{
-   color: var(--text-color);
-   font-size: var(--p-font);
-   font-weight: 600;
-   margin: 0 30px;
-   transition: all 0.5s ease;
+.nav-list a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 30px;
+    transition: all 0.5s ease;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
     color: var(--main-color);
 }
 
-.nav-list a.active{
+.nav-list a.active {
     color: var(--main-color);
 }
 
-.nav-icons{ 
-    display: flex; 
+.nav-icons {
+    display: flex;
     align-items: center;
     padding: 8 px 15px;
     background: var(--main-color);
@@ -83,7 +83,7 @@ header{
     box-shadow: #ff9f0d 0px 1px 25px;
 }
 
-.nav-icons i{
+.nav-icons i {
     vertical-align: middle;
     color: var(--bg-color);
     font-size: 25px;
@@ -92,52 +92,76 @@ header{
     transition: all 0.5s ease;
 }
 
-#menu-icon{
+#menu-icon {
     display: none;
     font-size: 32px;
     color: var(--bg-color);
     cursor: pointer;
     z-index: 100001;
-    display:none;
+    display: none;
 }
 
-.nav-icons i:hover{
+.nav-icons i:hover {
     color: var(--text-color);
     transform: scale(1.1);
 }
 
 /* Home */
 
-section{
-    padding: 190px 24% 10px; 
-}
-.Home{
-    padding: 25px 14% 60px;
-    position:relative;
-    height: 100vh;
-    width:100%;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap:2rem;
+section {
+    padding: 190px 24% 10px;
 }
 
-.home-img img{
+.Home {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    background-color: var(--Main-text-color);
+    display: flex;
+    align-items: stretch;
+    min-height: 520px;
+}
+
+.home-card {
+    position: relative;
+    margin: 80px 5% 40px 5%;
+    width: 100%;
+    background-color: #D9C5A0;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 5% 50px 5%;
+    gap: 2rem;
+}
+
+.home-img {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+.home-img img {
     width: 100%;
     height: auto;
+    display: block;
+    border-radius: 0.8rem;
 }
 
-.home-text h1{
+.home-text h1 {
     font-size: var(--bif-font);
     font-weight: 700;
     line-height: 0.92;
     margin-bottom: 1rem;
 }
-span{
-    color:var(--main-color)
+
+span {
+    color: var(--main-color)
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 10px 20px;
     background: var(--main-color);
@@ -148,7 +172,7 @@ span{
     transition: all 0.5s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--other-color);
     color: var(--bg-color);
     transform: scale(1.1);
@@ -159,46 +183,47 @@ header.sticky {
     background: var(--bg-color);
 }
 
-   /* <!-- Conteiner --> */
+/* <!-- Conteiner --> */
 .container {
     padding: 25px 14% 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, auto));
-    gap:3rem;
+    gap: 3rem;
     text-align: center;
 }
 
-.container-box{
+.container-box {
     padding: 30px 12% 35px;
-    color:var(--Main-text-color);
+    color: var(--Main-text-color);
     border-radius: 2rem;
     background-color: var(--other-color);
 }
 
-.container-box:hover{
+.container-box:hover {
     background-color: var(--other-text-color);
     color: var(--other-color);
 }
-.container-box img{
+
+.container-box img {
     width: 100%;
     height: auto;
     max-width: 50px;
 }
 
 
-.container-box h3{
+.container-box h3 {
     font-size: 18px;
     font-weight: bold;
     margin: 16px o;
 }
 
 
-.container-box h3:hover{
-    color:rgb(48, 28, 162);
+.container-box h3:hover {
+    color: rgb(48, 28, 162);
     transition: all 0.7s ease;
 }
 
-.imgreales{
+.imgreales {
     padding: 40px 10% 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, auto));
@@ -206,40 +231,41 @@ header.sticky {
     text-align: center;
 }
 
-.cir{
+.cir {
     padding: 110px 20% 110px;
-    border-radius:3rem;
+    border-radius: 3rem;
     color: var(--Main-text-color);
-    background-color:var(--other-color);
+    background-color: var(--other-color);
 }
-.cir:hover{
-    color:var(--other-color);
+
+.cir:hover {
+    color: var(--other-color);
     background-color: var(--other-text-color);
-    
+
 }
 
 /*footer*/
-.footer{
-    padding: 60px 3% 60px; 
+.footer {
+    padding: 60px 3% 60px;
     align-items: center;
 }
 
 
 
-.listafinal{
+.listafinal {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     font-size: 0.9rem;
     color: var(--other-text-color);
 }
 
-.Fn{
+.Fn {
     color: var(--other-color);
     font-weight: 700;
 }
 
-.MainName{
-    text-decoration:underline;
-    color:var(--Main-text-color);
+.MainName {
+    text-decoration: underline;
+    color: var(--Main-text-color);
     font-size: 2rem;
 }
