@@ -26,7 +26,7 @@
 
 body{
     background-color: var(--second-color);
-    color: var(--text-color);
+    color: var(--other-text-color);
 }
 
 header{
@@ -41,6 +41,8 @@ header{
     background: transparent;
     padding: 30px 14%;
     transition: all 0.5s ease;
+    background-color:var(--bg-color);
+    color: var(--other-color);
 }
 
 .Logo{
@@ -48,15 +50,9 @@ header{
     align-items: center;
     color: var(--Main-text-color);
     font-size: 33px;
-    font-weight: 700;
+    font-weight: 700; 
+    text-decoration: underline;
 }
-
-.Logo i{
-    color: var(--main-color);
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
 .nav-list{
     display: flex;
 }
@@ -85,6 +81,7 @@ header{
     border-radius: 3rem;
     box-shadow: #ff9f0d 0px 1px 25px;
 }
+
 
 .nav-icons i{
     vertical-align: middle;

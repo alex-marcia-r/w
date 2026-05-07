@@ -16,7 +16,7 @@
     --Main-text-color: #542B12;
     --other-text-color: #0B3954;
     --other-color: #000;
-    --second-color: #f6f6f6;
+    --second-color: #f1f1f1e9;
     --bg-color: #FFFFFF;
 
     --bif-font: 2.1rem;
@@ -25,8 +25,8 @@
 }
 
 body{
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--second-color);
+    color: var(--other-text-color);
 }
 
 header{
@@ -41,6 +41,8 @@ header{
     background: transparent;
     padding: 30px 14%;
     transition: all 0.5s ease;
+    background-color:var(--bg-color);
+    color: var(--other-color);
 }
 
 .Logo{
@@ -48,13 +50,8 @@ header{
     align-items: center;
     color: var(--Main-text-color);
     font-size: 33px;
-    font-weight: 700;
-}
-
-.Logo i{
-    color: var(--main-color);
-    vertical-align: middle;
-    margin-right: 5px;
+    font-weight: 700; 
+    text-decoration: underline;
 }
 
 .nav-list{
@@ -107,6 +104,11 @@ header{
 .nav-icons i:hover{
     color: var(--text-color);
     transform: scale(1.1);
+}
+
+header.sticky {
+    padding: 12px 14%;
+    background: var(--second-color);
 }
 
 /*footer*/
