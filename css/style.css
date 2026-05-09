@@ -1,117 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* style.css — estilos específicos de index.html */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
-}
-
-:root {
-    --main-color: #ff9f0d;
-    --Main-text-color: #542B12;
-    --other-text-color: #0B3954;
-    --other-color: #000;
-    --second-color: #f1f1f1e9;
-    --bg-color: #FFFFFF;
-
-    --bif-font: 2.1rem;
-    --h2-font: 2.5rem;
-    --p-font: 1rem;
-}
-
+/* ── Body del index ── */
 body {
-    background-color: var(--second-color);
+    background-color: var(--second  -color);
     color: var(--Main-text-color);
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 30px 14%;
-    transition: all 0.5s ease;
-    background-color: var(--bg-color);
-    color: var(--other-color);
-}
-
-.Logo {
-    display: flex;
-    align-items: center;
-    color: var(--Main-text-color);
-    font-size: 33px;
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.nav-list {
-    display: flex;
-}
-
-.nav-list a {
-    color: var(--text-color);
-    font-size: var(--p-font);
-    font-weight: 600;
-    margin: 0 30px;
-    transition: all 0.5s ease;
-}
-
-.nav-list a:hover {
-    color: var(--main-color);
-}
-
-.nav-list a.active {
-    color: var(--main-color);
-}
-
-.nav-icons {
-    display: flex;
-    align-items: center;
-    padding: 8 px 15px;
-    background: var(--main-color);
-    border-radius: 3rem;
-    box-shadow: #ff9f0d 0px 1px 25px;
-}
-
-.nav-icons i {
-    vertical-align: middle;
-    color: var(--bg-color);
-    font-size: 25px;
-    margin-right: 8px;
-    margin-left: 5px;
-    transition: all 0.5s ease;
-}
-
-#menu-icon {
-    display: none;
-    font-size: 32px;
-    color: var(--bg-color);
-    cursor: pointer;
-    z-index: 100001;
-    display: none;
-}
-
-.nav-icons i:hover {
-    color: var(--text-color);
-    transform: scale(1.1);
-}
-
-/* Home */
-
+/* ── Sección base ── */
 section {
     padding: 190px 24% 10px;
 }
 
+/* ──  principal ── */
 .Home {
     padding: 0;
     position: relative;
@@ -157,33 +57,14 @@ section {
     margin-bottom: 1rem;
 }
 
-span {
-    color: var(--main-color)
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--main-color);
-    color: var(--bg-color);
-    border-radius: 3rem;
-    font-size: var(--p-font);
-    font-weight: 600;
-    transition: all 0.5s ease;
-}
-
+/* Sobrescribe hover  */
 .btn:hover {
     background: var(--other-color);
     color: var(--bg-color);
     transform: scale(1.1);
 }
 
-header.sticky {
-    padding: 12px 14%;
-    background: var(--bg-color);
-}
-
-/* <!-- Conteiner --> */
+/*   container ── */
 .container {
     padding: 25px 14% 60px;
     display: grid;
@@ -210,19 +91,18 @@ header.sticky {
     max-width: 50px;
 }
 
-
 .container-box h3 {
     font-size: 18px;
     font-weight: bold;
-    margin: 16px o;
+    margin: 16px 0;
 }
-
 
 .container-box h3:hover {
     color: rgb(48, 28, 162);
     transition: all 0.7s ease;
 }
 
+/* ──      ── */
 .imgreales {
     padding: 40px 10% 40px;
     display: grid;
@@ -241,33 +121,9 @@ header.sticky {
 .cir:hover {
     color: var(--other-color);
     background-color: var(--other-text-color);
-
 }
 
-/*footer*/
+/* ── Footer   ── */
 .footer {
     padding: 60px 3% 60px;
-    align-items: center;
-    background-color: var(--bg-color);
-    margin-top: 20px;
-}
-
-
-
-.listafinal {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 0.9rem;
-    color: var(--other-text-color);
-}
-
-.Fn {
-    color: var(--other-color);
-    font-weight: 700;
-}
-
-.MainName {
-    text-decoration: underline;
-    color: var(--Main-text-color);
-    font-size: 2rem;
 }

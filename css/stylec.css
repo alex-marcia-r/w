@@ -1,117 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
-}
-
-:root {
-    --main-color: #ff9f0d;
-    --Main-text-color: #542B12;
-    --other-text-color: #0B3954;
-    --other-color: #000;
-    --second-color: #f1f1f1e9;
-    --bg-color: #FFFFFF;
-
-    --bif-font: 2.1rem;
-    --h2-font: 2.5rem;
-    --p-font: 1rem;
-}
-
-body {
-    background-color: var(--second-color);
-    color: var(--Main-text-color);
-}
-
-/* ── Header ── */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--bg-color);
-    padding: 30px 14%;
-    transition: all 0.5s ease;
-    color: var(--other-color);
-}
-
-.Logo {
-    display: flex;
-    align-items: center;
-    color: var(--Main-text-color);
-    font-size: 33px;
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.nav-list {
-    display: flex;
-}
-
-.nav-list a {
-    color: var(--other-color);
-    font-size: var(--p-font);
-    font-weight: 600;
-    margin: 0 30px;
-    transition: all 0.5s ease;
-}
-
-.nav-list a:hover,
-.nav-list a.active {
-    color: var(--main-color);
-}
-
-.nav-icons {
-    display: flex;
-    align-items: center;
-    padding: 8px 15px;
-    background: var(--main-color);
-    border-radius: 3rem;
-    box-shadow: #ff9f0d 0px 1px 25px;
-}
-
-.nav-icons i {
-    vertical-align: middle;
-    color: var(--bg-color);
-    font-size: 25px;
-    margin-right: 8px;
-    margin-left: 5px;
-    transition: all 0.5s ease;
-}
-
-#menu-icon {
-    display: none;
-    font-size: 32px;
-    color: var(--bg-color);
-    cursor: pointer;
-    z-index: 100001;
-}
-
-.nav-icons i:hover {
-    transform: scale(1.1);
-}
-
-header.sticky {
-    padding: 12px 14%;
-    background: var(--bg-color);
-}
+/* stylec.css — estilos específicos de contacto.html */ 
 
 /* ── Sección base ── */
 section {
     padding: 110px 8% 30px;
 }
 
-/* ── Hero de página (fondo gris normal) ── */
+/* ── Hero de página  ── */
 .page-hero {
     padding: 120px 8% 16px;
     background-color: var(--second-color);
@@ -133,11 +27,7 @@ section {
     margin-bottom: 0.4rem;
 }
 
-span {
-    color: var(--main-color);
-}
-
-/* ── Sección contacto (grid 2 col) ── */
+/* ── Sección contacto  ── */
 .contacto-section {
     padding: 20px 8% 40px;
     display: grid;
@@ -236,49 +126,7 @@ span {
     line-height: 1.5;
 }
 
+/* Override btn for contact alignment */
 .btn {
-    display: inline-block;
-    padding: 10px 24px;
-    background: var(--main-color);
-    color: var(--bg-color);
-    border-radius: 3rem;
-    font-size: var(--p-font);
-    font-weight: 600;
-    transition: all 0.4s ease;
-    border: none;
-    cursor: pointer;
     align-self: flex-start;
-}
-
-.btn:hover {
-    background: #e08800;
-    transform: scale(1.05);
-}
-
-/* ── Footer blanco ── */
-.footer {
-    padding: 60px 5% 40px;
-    background-color: var(--bg-color);
-    margin-top: 20px;
-}
-
-.listafinal {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 0.9rem;
-    color: var(--other-text-color);
-    gap: 1.5rem;
-}
-
-.Fn {
-    color: var(--other-color);
-    font-weight: 700;
-}
-
-.MainName {
-    text-decoration: underline;
-    color: var(--Main-text-color);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: block;
 }
