@@ -12,12 +12,17 @@
     gap:2rem;
 }
 
+/* <!-- Historia --> */
 .Historia-head{
     padding: 50px 8% 2px;
 }
 
 .uno{
     padding: 50px 8% 2px;
+}
+
+.homeNos-text{
+    color: var(--other-text-color);
 }
 
 .btn-n{
@@ -36,8 +41,7 @@
     color: var(--bg-color);
     transform: scale(1.1);
 }
-
-/*conteiner*/
+ 
 .Historia{
     padding: 60px 3% 60px;
     align-items: right;
@@ -90,4 +94,15 @@
     box-sizing: border-box;
     margin-left: 30%;
     border-radius: 30px;
+}
+ 
+/* <!-- mensaje final --> */
+  
+.FinalText{
+    font-size: 1.7rem;
+    padding: 80px 450px 80px 150px;
+    color: var(--bg-color);
+    background: var(--Main-text-color);
+    text-align: justify;
+    font-weight: 500;
 }

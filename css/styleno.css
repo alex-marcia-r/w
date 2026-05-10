@@ -3,3 +3,44 @@
 header.sticky {
     background: var(--second-color);
 }
+
+/*    <!--  sub encabezado -->  */
+
+.Home{
+    margin-top: 110px;
+    color:var(--other-text-color);
+    text-align: center;
+    font-size: var(--medium-font);
+    padding: 0 0 70px 0;
+}
+ 
+/*     <!-- Noticias -->   */
+
+.Noticias-card{
+    display:flex; 
+    margin: 50px 100px;
+    height: 200px;
+}
+
+.Noticias-img{
+    height: 100%;
+    width: 330px;
+    border-right: 1px solid var(--other-color);
+}
+
+.Noticias-text{
+    padding: 0 30px;
+    font-size: 1.1rem;
+    color:var(--other-color);
+    background-color: #e0e1f2e2;;
+}
+
+.Noticias-text h3{
+    color:var(--other-text-color);
+    padding: 0 0 11px 0;
+
+}
+
+.Noticias-text span{
+    color:grey;
+}
