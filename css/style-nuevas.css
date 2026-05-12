@@ -1,0 +1,146 @@
+/* css/style-nuevas.css */
+
+/* ── Estructura General para Nuevas Páginas ── */
+.nueva-seccion {
+    padding: 150px 10% 60px;
+    min-height: 80vh;
+}
+
+.titulo-seccion {
+    font-size: var(--h2-font);
+    color: var(--Main-text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ── Login ── */
+.login-wrap {
+    max-width: 400px;
+    margin: 0 auto;
+    background: var(--other-color); /* Fondo oscuro como en contacto */
+    padding: 40px;
+    border-radius: 1rem;
+    color: var(--bg-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.login-form input {
+    padding: 12px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--bg-color);
+    outline: none;
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.login-form input:focus {
+    border-color: var(--main-color);
+}
+
+/* ── Detalle de Producto ── */
+.detalle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.detalle-img img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.detalle-info h2 {
+    font-size: var(--bif-font);
+    color: var(--Main-text-color);
+    margin-bottom: 1rem;
+}
+
+.precio {
+    font-size: var(--medium-font);
+    color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Carrito de Compras ── */
+.carrito-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-color);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.carrito-table th, .carrito-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.carrito-table th {
+    background: var(--Main-text-color);
+    color: var(--bg-color);
+}
+
+.carrito-total {
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ── Formas de Pago ── */
+.pagos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.metodo-pago {
+    background: var(--Main-text-color); /* Fondo café oscuro para mantener el estilo */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-decoration: none; /* Evita que el texto se subraye al ser un enlace */
+}
+
+.metodo-pago h3 {
+    color: var(--bg-color); /* Letras blancas para contrastar con el fondo oscuro */
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.metodo-pago i {
+    font-size: 3.5rem;
+    color: var(--main-color); /* Iconos en el naranja de acento */
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+}
+
+.metodo-pago:hover {
+    background: var(--other-color); /* Cambia a negro al pasar el mouse */
+    border-color: var(--main-color); /* Borde naranja brillante */
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 159, 13, 0.2); /* Sombra con un ligero tono naranja */
+}
+
+.metodo-pago:hover i {
+    transform: scale(1.1); /* El icono crece un poco al pasar el mouse */
+}

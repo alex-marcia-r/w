@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Rosquilla Reyes</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style-nuevas.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="nueva-seccion">
+        <div class="login-wrap" style="max-width: 600px;">
+            <h2 class="titulo-seccion" style="color: #fff;">Detalles de Facturación</h2>
+            <form class="login-form" action="index.html">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="text" placeholder="Dirección de envío (Ej. Managua...)" required>
+                
+                <h3 style="margin-top: 1rem; color: var(--main-color);">Datos de la Tarjeta</h3>
+                <input type="text" placeholder="Número de Tarjeta" required>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <input type="text" placeholder="MM/AA" required>
+                    <input type="text" placeholder="CVC" required>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Confirmar Pedido (C$ 390.00)</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/components.js"></script> 
+</body>
+</html>
