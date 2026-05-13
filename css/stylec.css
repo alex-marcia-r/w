@@ -38,7 +38,7 @@ section {
 
 /* ── Formulario ── */
 .contacto-form-wrap {
-    background-color: #1b2f40;
+    background-color:var(--forms-color);
     border-radius: 1rem;
     padding: 36px 32px;
     color: #fff;

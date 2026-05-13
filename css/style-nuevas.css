@@ -17,7 +17,7 @@
 .login-wrap {
     max-width: 400px;
     margin: 0 auto;
-    background: var(--other-color); /* Fondo oscuro como en contacto */
+    background: var(--forms-color); /* Fondo oscuro como en contacto */
     padding: 40px;
     border-radius: 1rem;
     color: var(--bg-color);

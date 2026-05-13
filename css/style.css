@@ -80,7 +80,7 @@ section {
     color: var(--other-text-color);
 }
 .container-box {
-    padding: 30px 12% 35px;
+    padding: 40px 12% 35px;
     color: var(--other-text-color);
     border-radius: 2rem;
 }
@@ -112,15 +112,13 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     gap: 4rem;
-    text-align: center;
     padding-top: 0;
 }
 
 .cir {
     padding: 110px 20% 110px;
     border-radius: 3rem;
-    color: var(--Main-text-color);
-    background-color: var(--other-color);
+    color: var(--bg-color);
 }
 .cir-1 {
     background-image: url('https://scontent.fmga3-1.fna.fbcdn.net/v/t39.30808-6/472117265_8801190326630779_8194579087937857938_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dXwitz_aptQQ7kNvwGWksNt&_nc_oc=Ado5GNYMnvHjTgi4TKbuGbX79gArZtTMub9UcGGSj-en0V9mBg12Yl5wV56LJrsC75kUS2EtVe4qtwwdhAxjl_26&_nc_zt=23&_nc_ht=scontent.fmga3-1.fna&_nc_gid=Dpkxyi1pwdKDsoiIhB-kbw&_nc_ss=7b289&oh=00_Af7jmqV32e897cPdFpdH_clyeE2NuXOEaoDu5Lih1lx4hg&oe=6A09292F');
@@ -145,9 +143,4 @@ section {
 .cir:hover {
     color: var(--other-color);
     background-color: var(--other-text-color);
-}
-
-/* ── Footer   ── */
-.footer {
-    padding: 60px 3% 60px;
 }
