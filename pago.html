@@ -6,31 +6,43 @@
     <title>Pago - Rosquilla Reyes</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style-nuevas.css">
+    <link rel="stylesheet" href="css/pago.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <section class="nueva-seccion">
-        <div class="login-wrap" style="max-width: 600px;">
-            <h2 class="titulo-seccion" style="color: #fff;">Detalles de Facturación</h2>
-            <form class="login-form" action="index.html">
+        <div class="pago-wrap">
+            <h2>Detalles de Facturación</h2>
+            <form class="pago-form" action="index.html">
                 <input type="text" placeholder="Nombre completo" required>
                 <input type="text" placeholder="Dirección de envío (Ej. Managua...)" required>
                 
-                <h3 style="margin-top: 1rem; color: var(--main-color);">Datos de la Tarjeta</h3>
+                <h3>Datos de la Tarjeta</h3>
                 <input type="text" placeholder="Número de Tarjeta" required>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="pago-tarjeta-grid">
                     <input type="text" placeholder="MM/AA" required>
                     <input type="text" placeholder="CVC" required>
                 </div>
                 
-                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Confirmar Pedido (C$ 390.00)</button>
+                <button type="submit" class="btn" id="btn-confirmar">
+                    Confirmar Pedido <i class='bx bx-check'></i>
+                </button>
             </form>
         </div>
     </section>
 
     <div id="footer-placeholder"></div>
-    <script src="js/components.js"></script> 
+    <script src="js/components.js"></script>
+    <script src="js/productos-data.js"></script>
+    <script>
+        // Muestra el total del carrito en el botón
+        var total = getTotalCarrito();
+        var btnConfirmar = document.getElementById('btn-confirmar');
+        if (total > 0) {
+            btnConfirmar.innerHTML = 'Confirmar Pedido (C$ ' + total.toFixed(2) + ') <i class="bx bx-check"></i>';
+        }
+    </script>
 </body>
 </html>

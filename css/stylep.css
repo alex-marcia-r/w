@@ -47,6 +47,10 @@ section {
     text-align: center;
 }
 
+.productos-grid a{
+    text-decoration: none;
+}
+
 .producto-card {
     background: var(--bg-color);
     border-radius: 1rem;

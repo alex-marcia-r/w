@@ -1,0 +1,57 @@
+/* css/pago.css — estilos específicos de pago.html */
+
+.pago-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--forms-color);
+    padding: 40px;
+    border-radius: 1rem;
+    color: var(--bg-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.pago-wrap h2 {
+    font-size: var(--h2-font);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.pago-wrap h3 {
+    margin-top: 1rem;
+    color: var(--main-color);
+}
+
+.pago-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.pago-form input {
+    padding: 12px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--bg-color);
+    outline: none;
+}
+
+.pago-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.pago-form input:focus {
+    border-color: var(--main-color);
+}
+
+.pago-tarjeta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.btn-confirmar{
+    width: 100%; 
+    margin-top: 1rem;
+}

@@ -6,6 +6,7 @@
     <title>Detalle del Producto - Rosquilla Reyes</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style-nuevas.css">
+    <link rel="stylesheet" href="css/detalle-producto.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -14,85 +15,33 @@
     <section class="nueva-seccion">
         <div class="detalle-grid">
             <div class="detalle-img">
-                <!-- Les pusimos ID a los elementos que van a cambiar -->
                 <img id="det-img" src="img/rosquillas.jpg" alt="Producto">
             </div>
             <div class="detalle-info">
                 <h2 id="det-titulo">Cargando producto...</h2>
                 <p id="det-precio" class="precio">C$ 0.00</p>
-                <p id="det-desc" style="margin-bottom: 2rem; line-height: 1.6; color: var(--other-text-color);">
+                <p id="det-desc">
                     Por favor espera...
                 </p>
-                <a href="carrito.html" class="btn">Añadir al carrito <i class='bx bx-cart-add'></i></a>
+
+                <!-- Selector de cantidad -->
+                <div class="cantidad-selector">
+                    <label>Cantidad:</label>
+                    <button class="btn-qty" id="btn-menos"><i class='bx bx-minus'></i></button>
+                    <span class="cantidad-valor" id="det-cantidad">1</span>
+                    <button class="btn-qty" id="btn-mas"><i class='bx bx-plus'></i></button>
+                </div>
+
+                <a href="#" class="btn" id="btn-agregar-carrito">
+                    <span class="btn-texto">Añadir al carrito</span> <i class='bx bx-cart-add'></i>
+                </a>
             </div>
         </div>
     </section>
 
     <div id="footer-placeholder"></div>
-    
-    <script src="js/components.js"></script> 
-    
-    <!-- Este script hace la magia leyendo la URL -->
-    <script>
-        // 1. Leer el parámetro "?prod=" de la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const productoID = urlParams.get('prod');
-
-        // 2. Nuestra "Base de datos" simulada (Mock)
-        const bdProductos = {
-            'rosquillas': {
-                img: 'img/productos/Rosquillas.png',
-                titulo: 'Rosquillas Tradicionales',
-                precio: 'C$ 120.00 / Bolsa',
-                desc: 'Nuestras rosquillas son elaboradas con la auténtica receta de El Viejo, Chinandega. Hechas a base de maíz tostado, queso seco y mantequilla, horneadas a la perfección en hornos de leña tradicionales.'
-            },
-            'hojaldras': {
-                img: 'img/productos/Hojaldras.png',
-                titulo: 'Hojaldras Crujientes',
-                precio: 'C$ 150.00 / Bolsa',
-                desc: 'Deliciosas hojaldras horneadas con un toque dulce y una textura suave por dentro pero crujiente por fuera. El balance perfecto de ingredientes tradicionales para endulzar tu tarde.'
-            },
-            'rosquetes': {
-                img: 'img/productos/Rosquetes.png',
-                titulo: 'Rosquetes Bañados',
-                precio: 'C$ 110.00 / Bolsa',
-                desc: 'Tradicionales rosquetes bañados en dulce, con esa cubierta blanca azucarada que se deshace en la boca. Un verdadero clásico de la gastronomía chinandegana.'
-            },
-            'cosasdehorno': {
-                img: 'img/productos/Cosadehorno.png',
-                titulo: 'Cosas de Horno Variadas',
-                precio: 'C$ 140.00 / Bandeja',
-                desc: 'Una selección de nuestras mejores cosas de horno: perrereque, empanadas de queso, y más. Todo recién horneado con la tradición que nos caracteriza.'
-            },
-            'pupusas': {
-                img: 'img/productos/Pupusas.png',
-                titulo: 'Pupusas Tostadas',
-                precio: 'C$ 120.00 / Unidad',
-                desc: 'Nuestra especialidad para eventos: pupusas de quesillo tostadas al horno. Ideales para compartir, servidas con su tradicional curtido.'
-            },
-            'empanadas': {
-                img: 'img/productos/Empanadas.png', /* Puedes cambiar esta imagen si tienes una específica */
-                titulo: 'Empanadas Dulces',
-                precio: 'C$ 130.00 / Bandeja',
-                desc: 'Empanadas dulces tradicionales, perfectas para acompañar tu café o como postre después de una buena comida nicaragüense.'
-            }
-        };
-
-        // 3. Si el producto existe en nuestro objeto, reemplazamos el HTML
-        if (productoID && bdProductos[productoID]) {
-            const prodData = bdProductos[productoID];
-            document.getElementById('det-img').src = prodData.img;
-            document.getElementById('det-titulo').textContent = prodData.titulo;
-            document.getElementById('det-precio').textContent = prodData.precio;
-            document.getElementById('det-desc').textContent = prodData.desc;
-        } else {
-            // Si entra directo sin parámetro, mostramos las rosquillas por defecto
-            const defaultProd = bdProductos['rosquillas'];
-            document.getElementById('det-img').src = defaultProd.img;
-            document.getElementById('det-titulo').textContent = defaultProd.titulo;
-            document.getElementById('det-precio').textContent = defaultProd.precio;
-            document.getElementById('det-desc').textContent = defaultProd.desc;
-        }
-    </script>
+    <script src="js/components.js"></script>
+    <script src="js/productos-data.js"></script>
+    <script src="js/detalle-producto.js"></script>
 </body>
 </html>

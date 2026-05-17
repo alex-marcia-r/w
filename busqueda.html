@@ -6,28 +6,27 @@
     <title>Buscar - Rosquilla Reyes</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style-nuevas.css">
-    <link rel="stylesheet" href="css/stylep.css"> <!-- Para reusar el grid de productos -->
+    <link rel="stylesheet" href="css/busqueda.css">
+    <link rel="stylesheet" href="css/stylep.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <section class="nueva-seccion">
-        <div class="login-wrap" style="max-width: 600px; margin-bottom: 4rem;">
-            <h2 class="titulo-seccion" style="color: #fff;">¿Qué se te antoja hoy?</h2>
-            <form class="login-form" action="busqueda.html">
-                <div style="display: flex; gap: 10px;">
-                    <input type="text" placeholder="Ej: Cosas de horno" style="flex-grow: 1;" required>
-                    <button type="submit" class="btn"><i class='bx bx-search'></i></button>
-                </div>
+        <div class="busqueda-wrap">
+            <h2>¿Qué se te antoja hoy?</h2>
+            <form class="busqueda-form" action="busqueda.html">
+                <input type="text" placeholder="Ej: Cosas de horno" required>
+                <button type="submit" class="btn"><i class='bx bx-search'></i></button>
             </form>
         </div>
 
-        <h3 style="color: var(--Main-text-color); margin-bottom: 2rem; text-align: center;">Resultados para "Cosas de horno"</h3>
+        <h3 class="resultados-titulo">Resultados para "Cosas de horno"</h3>
         
         <!-- Reusamos el grid de la página de productos para mostrar resultados -->
         <div class="productos-grid">
-            <a href="detalle-producto.html?prod=cosasdehorno" style="text-decoration: none;">
+            <a href="detalle-producto.html?prod=cosasdehorno">
                 <div class="producto-card">
                     <div class="producto-img-wrap">
                         <img src="img/Productos/Cosadehorno.png" alt="Cosas de horno">
@@ -35,7 +34,7 @@
                     <p>Cosas de horno tradicionales</p>
                 </div>
             </a>
-            <a href="detalle-producto.html?prod=Rosquillas" style="text-decoration: none;">
+            <a href="detalle-producto.html?prod=rosquillas">
                 <div class="producto-card">
                     <div class="producto-img-wrap">
                         <img src="img/Productos/Rosquillas.png" alt="Rosquillas">
@@ -47,6 +46,6 @@
     </section>
 
     <div id="footer-placeholder"></div>
-    <script src="js/components.js"></script> 
+    <script src="js/components.js"></script>
 </body>
 </html>

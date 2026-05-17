@@ -1,0 +1,44 @@
+/* css/forma-pago.css — estilos específicos de forma-pago.html */
+
+.pagos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.metodo-pago {
+    background: var(--Main-text-color);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.metodo-pago h3 {
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.metodo-pago i {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+}
+
+.metodo-pago:hover {
+    background: var(--other-color);
+    border-color: var(--main-color);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 159, 13, 0.2);
+}
+
+.metodo-pago:hover i {
+    transform: scale(1.1);
+}

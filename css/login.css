@@ -1,0 +1,54 @@
+/* css/login.css — estilos específicos de login.html */
+
+.login-wrap {
+    max-width: 400px;
+    margin: 0 auto;
+    background: var(--forms-color);
+    padding: 40px;
+    border-radius: 1rem;
+    color: var(--bg-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.titulo-seccion{
+    color:var(--bg-color);
+}
+
+.btn{
+    width: 100%; 
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.login-form input {
+    padding: 12px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--bg-color);
+    outline: none;
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.login-form input:focus {
+    border-color: var(--main-color);
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.res{
+    color: var(--main-color);
+    text-decoration: underline;
+}

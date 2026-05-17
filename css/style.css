@@ -1,6 +1,14 @@
 /* style.css — estilos específicos de index.html */
+
+/* ── Body del index ── */
 body {
-    background-color: var(--bg-color);
+    background-color: var(--second  -color);
+    color: var(--Main-text-color);
+}
+
+/* ── Sección base ── */
+section {
+    padding: 190px 24% 10px;
 }
 
 /* ──  principal ── */
@@ -10,20 +18,21 @@ body {
     width: 100%;
     background-color: var(--Main-text-color);
     display: flex;
+    align-items: stretch;
     min-height: 520px;
 }
 
 .home-card {
     position: relative;
+    margin: 80px 5% 40px 5%;
     width: 100%;
-    background-image: url('../img/productos.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #D9C5A0;
+    border-radius: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     overflow: hidden;
-    padding: 60px 5% 40px 5%;
+    padding: 50px 5% 50px 5%;
     gap: 2rem;
 }
 
@@ -57,7 +66,7 @@ body {
 
 /*   container ── */
 .container {
-    padding: 25px  60px;
+    padding: 25px 14% 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, auto));
     gap: 3rem;
@@ -67,7 +76,7 @@ body {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 30px;
     color: var(--other-text-color);
 }
 .container-box {

@@ -1,0 +1,89 @@
+/* css/detalle-producto.css — estilos específicos de detalle-producto.html */
+
+.detalle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.detalle-img img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.detalle-info h2 {
+    font-size: var(--bif-font);
+    color: var(--Main-text-color);
+    margin-bottom: 1rem;
+}
+
+.precio {
+    font-size: var(--medium-font);
+    color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Selector de cantidad ── */
+.cantidad-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.cantidad-selector label {
+    font-weight: 600;
+    color: var(--other-text-color);
+}
+
+.cantidad-selector .btn-qty {
+    background: none;
+    border: 2px solid var(--Main-text-color);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--Main-text-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.cantidad-selector .btn-qty:hover {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.cantidad-selector .cantidad-valor {
+    font-weight: 700;
+    font-size: 1.3rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* ── Botón agregar al carrito ── */
+#btn-agregar-carrito {
+    transition: all 0.4s ease;
+}
+
+#btn-agregar-carrito i {
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+/*     */
+#det-desc{
+    margin-bottom: 2rem;
+    line-height: 1.6; 
+    color: var(--other-text-color);
+}
+
+.btn-texto{
+    color: var(--other-color);
+}
