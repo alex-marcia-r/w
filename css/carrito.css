@@ -98,8 +98,7 @@
 }
 
 .carrito-vacio i {
-    font-size: 1.7rem;
-    color: var(--Main-text-color);
+    font-size: 1.4rem;
     align-items: center;
 }
 
@@ -115,7 +114,7 @@
     background: var(--main-color);
     color: var(--bg-color);    
     height: 42px;
-    width: 190px;
+    width: 172px;
 }
 /* ── Carrito lleno ── */
 
