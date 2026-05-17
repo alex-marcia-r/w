@@ -2,7 +2,7 @@
 var bdProductos = {
     'rosquillas': {
         id: 'rosquillas',
-        img: 'img/productos/Rosquillas.png',
+        img: 'img/Productos/Rosquillas.png',
         titulo: 'Rosquillas Tradicionales',
         precio: 120,
         unidad: 'Bolsa',
@@ -10,7 +10,7 @@ var bdProductos = {
     },
     'hojaldras': {
         id: 'hojaldras',
-        img: 'img/productos/Hojaldras.png',
+        img: 'img/Productos/Hojaldras.png',
         titulo: 'Hojaldras Crujientes',
         precio: 150,
         unidad: 'Bolsa',
@@ -18,7 +18,7 @@ var bdProductos = {
     },
     'rosquetes': {
         id: 'rosquetes',
-        img: 'img/productos/Rosquetes.png',
+        img: 'img/Productos/Rosquetes.png',
         titulo: 'Rosquetes Bañados',
         precio: 110,
         unidad: 'Bolsa',
@@ -26,7 +26,7 @@ var bdProductos = {
     },
     'cosasdehorno': {
         id: 'cosasdehorno',
-        img: 'img/productos/Cosadehorno.png',
+        img: 'img/Productos/Cosadehorno.png',
         titulo: 'Cosas de Horno Variadas',
         precio: 140,
         unidad: 'Bandeja',
@@ -34,7 +34,7 @@ var bdProductos = {
     },
     'pupusas': {
         id: 'pupusas',
-        img: 'img/productos/Pupusas.png',
+        img: 'img/Productos/Pupusas.png',
         titulo: 'Pupusas Tostadas',
         precio: 120,
         unidad: 'Unidad',
@@ -42,7 +42,7 @@ var bdProductos = {
     },
     'empanadas': {
         id: 'empanadas',
-        img: 'img/productos/Empanadas.png',
+        img: 'img/Productos/Empanadas.png',
         titulo: 'Empanadas Dulces',
         precio: 130,
         unidad: 'Bandeja',
