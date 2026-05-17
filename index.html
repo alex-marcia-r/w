@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -21,11 +22,7 @@
                 <h6>CONOZCA NUESTROS PRODUCTOS</h6>
                 <h1>Sabor que hace <span>historia.</span> <br> Tradicion que se <br> <span>comparte.</span></h1>
                 <a href="productos.html" class="btn">Ver productos <i class="bx bxs-right-arrow"></i></a>
-            </div>
-            <div class="home-img">
-                <img src="img/productos.jpg"
-                    alt="Imagen representativa de nuestros productos ( en teorias son rosquillas pero despues cambio la imagen xd)">
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -59,31 +56,29 @@
         </div>
     </section>
 
-
-
-    <section class="imgreales">
-        <div class="cir cir-1">
-            <h3>Descubre nuestra <br>textura artesanal</h3>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide cir-1">
+                <div>Descubre nuestra textura artesanal</div>
+            </div>
+            <div class="swiper-slide cir-2">
+                <div>Sabor autentico del viejo</div>
+            </div>
+            <div class="swiper-slide cir-3">
+                <div>El toque ideal</div>
+            </div>
+            <div class="swiper-slide cir-4">
+                <div>Perfecto para tu café</div>
+            </div>
+             <div class="swiper-slide cir-5">
+                <div>Perfecto para tu café</div>
+            </div>
         </div>
 
-
-        <div class="cir cir-2">
-            <h3>Sabor autentico <br>del viejo</h3>
-        </div>
-
-
-        <div class="cir cir-3">
-            <h3> El toque ideal</h3>
-        </div>
-
-
-        <div class="cir cir-4">
-            <h3>Perfecto para tu café</h3>
-        </div>
-
-
-    </section>
-
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
     <!-- Footer  -->
     <div id="footer-placeholder"></div>
     <!-- 
@@ -91,6 +86,40 @@
 
     <script src="js/components.js"></script> 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        grabCursor:true,
+        spaceBetween: 30,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            cickable:true,
+            dynamicBullets:true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,  
+            },
+            768: {
+                slidesPerView: 2,  
+            },
+            992: {
+                slidesPerView: 3,  
+            },
+            1200: {
+                slidesPerView: 4,  
+            },
+        }
+        
+});</script>
 </body>
 
 </html>
